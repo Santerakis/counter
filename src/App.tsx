@@ -17,8 +17,8 @@ function App() {
         <div className={'App'}>
             <Display value={num}/>
             <div>
-                <Button isDisable={num<5 ?false :true} name={'inc'} callBack={callBackInc}/>
-                <Button isDisable={num<=0 ?false :true} name={'reset'} callBack={callBackReset}/>
+                <Button isDisable={num>=5} name={'inc'} callBack={callBackInc}/>       {/*num<5 ?false :true*/}
+                <Button isDisable={num<=0} name={'reset'} callBack={callBackReset}/>   {/*num<=0 ?false :true*/}
             </div>
 
         </div>
