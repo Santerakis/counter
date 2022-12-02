@@ -2,7 +2,9 @@
   text-align: center;
 }
 .red {
-  background-color: red;
+  color: red;
+  font-width: 40;
+  font-size: 20px;
 }
 .blue {
   background-color: blue;

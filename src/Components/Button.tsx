@@ -3,12 +3,13 @@ import React from 'react';
 type ButtonProps = {
     name: string
     callBack: () => void
+    isDisable: boolean
 }
-export const Button:React.FC<ButtonProps> = (props:ButtonProps) => {
+export const Button:React.FC<ButtonProps> = (props) => {
 
     return (
         <span>
-            <button onClick={props.callBack}>{props.name}</button>
+            <button disabled={props.isDisable} onClick={props.callBack}>{props.name}</button>
         </span>
     );
 };

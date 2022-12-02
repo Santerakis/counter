@@ -5,7 +5,7 @@ type DeviceProps = {
 }
 export const Display = (props: DeviceProps) => {
     return (
-        <div>
+        <div className={props.value===5 ?'red' :''}>
             {props.value}
         </div>
     );
